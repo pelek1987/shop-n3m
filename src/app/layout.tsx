@@ -1,7 +1,8 @@
-import { ActiveLink } from "@/ui/atoms/ActiveLink";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { ActiveLink } from "@/ui/atoms/ActiveLink";
+import { AppRoutes } from "@/types/app-routes";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,12 +24,18 @@ export default function RootLayout({
 						<nav className="mb-10">
 							<ul className="flex justify-center space-x-4">
 								<li>
-									<ActiveLink href="/" className="px-4 py-2 text-lg">
+									<ActiveLink
+										href={AppRoutes.HOME}
+										className="px-4 py-2 text-lg"
+									>
 										Home
 									</ActiveLink>
 								</li>
 								<li>
-									<ActiveLink href="/products" className="px-4 py-2 text-lg">
+									<ActiveLink
+										href={AppRoutes.PRODUCTS}
+										className="px-4 py-2 text-lg"
+									>
 										Products
 									</ActiveLink>
 								</li>

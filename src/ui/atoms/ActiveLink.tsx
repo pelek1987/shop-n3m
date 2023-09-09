@@ -3,9 +3,10 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+import { type AppRoutesValues } from "@/types/app-routes";
 
 type ActiveLinkProps = {
-	href: string;
+	href: AppRoutesValues;
 	className: string;
 	children: React.ReactNode;
 };
