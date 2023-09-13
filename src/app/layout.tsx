@@ -33,7 +33,8 @@ export default function RootLayout({
 								</li>
 								<li>
 									<ActiveLink
-										href={AppRoutes.PRODUCTS}
+										exact={true}
+										href={`${AppRoutes.PRODUCTS}`}
 										className="px-4 py-2 text-lg"
 									>
 										Products
