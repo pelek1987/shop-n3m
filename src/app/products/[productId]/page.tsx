@@ -1,9 +1,15 @@
+import { getSingleProductById } from "@/services/product";
+
 type SingleProductPageProps = {
 	params: {
 		productId: string;
 	};
 };
 
-export default function SingleProductPage({ params }: SingleProductPageProps) {
-	return <div>Product ID #{params.productId}</div>;
+export default async function SingleProductPage({
+	params,
+}: SingleProductPageProps) {
+	const product = await getSingleProductById(params.productId);
+
+	return <div>Product ID {product.id}</div>;
 }
