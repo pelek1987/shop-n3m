@@ -1,6 +1,6 @@
 export default function HomePage() {
 	return (
-		<div className="mx-auto text-center text-lg">
+		<div>
 			<p>Hello from Home Page</p>
 		</div>
 	);
