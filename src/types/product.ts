@@ -6,6 +6,7 @@ export type ProductCoverImage = {
 export type Product = {
 	id: string;
 	name: string;
+	category: string;
 	price: number;
 	coverImage: ProductCoverImage;
 };
