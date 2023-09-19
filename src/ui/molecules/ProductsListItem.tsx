@@ -11,7 +11,7 @@ type ProductsListItemProps = {
 export const ProductsListItem = ({ product }: ProductsListItemProps) => {
 	return (
 		<li className="group">
-			<Link href={`${AppRoutes.PRODUCTS}/${product.id}`}>
+			<Link href={`${AppRoutes.PRODUCT}/${product.id}`}>
 				<ProductsListItemCoverImage coverImage={product.coverImage} />
 				<ProductsListItemDescription product={product} />
 			</Link>
