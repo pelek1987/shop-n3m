@@ -21,7 +21,7 @@ export default function RootLayout({
 			<body className={inter.className}>
 				<div className="bg-white">
 					<div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-						<nav className="mb-10">
+						<nav className="mb-20">
 							<ul className="flex justify-center space-x-4">
 								<li>
 									<ActiveLink
