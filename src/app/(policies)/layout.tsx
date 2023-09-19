@@ -1,15 +1,9 @@
 import "../globals.css";
 
-export default function StaticPagesLayout({
+export default function PoliciesLayout({
 	children,
 }: {
 	children: React.ReactNode;
 }) {
-	return (
-		<html lang="en">
-			<body className="prose">
-				<div className="bg-white">{children}</div>
-			</body>
-		</html>
-	);
+	return <div className="mx-auto bg-white">{children}</div>;
 }
