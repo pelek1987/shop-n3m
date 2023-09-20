@@ -9,7 +9,7 @@ type SingleProductPageProps = {
 	};
 };
 
-export async function generateMetadaata({
+export async function generateMetadata({
 	params,
 }: {
 	params: { productId: string };
