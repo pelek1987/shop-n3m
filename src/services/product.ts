@@ -18,6 +18,8 @@ const mapProductItemResponseToProductItem = (product: ProductItemResponse) => {
 	return {
 		id: product.id,
 		name: product.title,
+		description: product.description,
+		longDescription: product.longDescription,
 		category: product.category,
 		price: product.price,
 		coverImage: {
